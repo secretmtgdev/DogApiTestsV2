@@ -11,3 +11,58 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dog-img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  transition: 0.1s transform ease-in-out;
+}
+
+.dog-img:hover {
+  cursor: pointer;
+  transform: scale(1.5, 1.5);
+}
+
+.dog-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 100px;
+}
+
+#modal {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  position: absolute;
+  color: white;
+  background-color: rgba(50, 0, 0, 0.5);
+}
+
+#modal-data-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.modal-button {
+  border-radius: 10px;
+}
+
+.modal-button:hover {
+  cursor: pointer;
+}
+
+#controls {
+  margin-bottom: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
